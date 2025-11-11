@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Olá Universo #01 — Índice dos Programas Sisgama</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#7c3aed; --muted:#9aa4b2; --glass: rgba(255,255,255,0.03);
+      --success:#10b981; --warning:#f59e0b; --progress:#06b6d4;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#061025 0%, #07142a 100%);color:#e6eef8;min-height:100vh}
+    .container{max-width:980px;margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{width:68px;height:68px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#2563eb);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(10,10,20,0.6)}
+    .logo h1{margin:0;font-size:26px;letter-spacing:-0.6px}
+    h2{margin:0 0 6px 0}
+    p.lead{color:var(--muted);margin-top:8px}
+
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:18px}
+    .main{background:linear-gradient(180deg,var(--card),rgba(11,18,32,0.8));padding:18px;border-radius:14px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+    .aside{padding:18px;border-radius:14px;background:var(--glass);backdrop-filter: blur(6px);}
+
+    .program{border-radius:10px;padding:14px;margin-bottom:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border:1px solid rgba(255,255,255,0.03)}
+    .prog-head{display:flex;justify-content:space-between;align-items:center}
+    .code{font-weight:700;color:var(--muted);font-size:13px}
+    .status{font-weight:700;padding:6px 10px;border-radius:999px;font-size:13px}
+    .status.warning{background:rgba(245,158,11,0.12);color:var(--warning);border:1px solid rgba(245,158,11,0.08)}
+    .status.paused{background:rgba(245,24,100,0.05);color:#ff7aa2;border:1px solid rgba(255,122,162,0.06)}
+    .status.active{background:rgba(16,185,129,0.08);color:var(--success);border:1px solid rgba(16,185,129,0.06)}
+    .status.exec{background:rgba(6,182,212,0.06);color:var(--progress);border:1px solid rgba(6,182,212,0.06)}
+    .title{font-size:18px;margin:6px 0}
+    .desc{color:var(--muted);margin:8px 0}
+    .highlights{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .chip{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted);border:1px solid rgba(255,255,255,0.02)}
+
+    .toc{list-style:none;padding:0;margin:12px 0 0 0}
+    .toc li{padding:10px 0;border-bottom:1px dashed rgba(255,255,255,0.03);display:flex;justify-content:space-between}
+    .toc a{color:inherit;text-decoration:none}
+
+    .controls{display:flex;gap:10px;align-items:center;margin-top:12px}
+    .btn{padding:10px 14px;border-radius:10px;border:0;background:var(--accent);color:white;font-weight:600;cursor:pointer}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06)}
+
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+
+    @media (max-width:900px){.grid{grid-template-columns:1fr;}.aside{order:2}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo" aria-hidden><strong style="color:white;font-size:20px">OU</strong></div>
+      <div>
+        <h1>Olá Universo — Episódio 01</h1>
+        <p class="lead">Índice ilustrativo: Apresentação dos programas do ecossistema Sisgama (versão para roteiro/gravação).</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main class="main">
+        <section id="intro" class="program">
+          <div class="prog-head">
+            <div class="code">Abertura • 0:00 – 1:00</div>
+            <div class="status">Introdução</div>
+          </div>
+          <h3 class="title">Abertura</h3>
+          <p class="desc">Vinheta de abertura, apresentador e breve introdução sobre o episódio. Frase de impacto e objetivo do programa.</p>
+        </section>
+
+        <section id="acceleration" class="program">
+          <div class="prog-head">
+            <div class="code">2.1.1 • ACCELERATION • 1:00 – 3:00</div>
+            <div class="status paused">⚠️ Paralisado</div>
+          </div>
+          <h3 class="title">Impulsiona startups e criadores independentes</h3>
+          <p class="desc">Mentorias, conexões estratégicas e suporte técnico para crescimento sustentável.</p>
+          <div class="highlights">
+            <div class="chip">Histórico do programa</div>
+            <div class="chip">Resultados anteriores</div>
+            <div class="chip">Planos de retomada</div>
+          </div>
+        </section>
+
+        <section id="lab" class="program">
+          <div class="prog-head">
+            <div class="code">2.2.1 • LAB • 3:00 – 5:00</div>
+            <div class="status active">✅ Ativo</div>
+          </div>
+          <h3 class="title">Laboratório colaborativo de inovação</h3>
+          <p class="desc">Espaço de experimentação, aprendizado e cultura de inovação. Projetos e eventos nascidos no LAB.</p>
+          <div class="highlights">
+            <div class="chip">Prototipagem</div>
+            <div class="chip">Workshops</div>
+            <div class="chip">Cocriação</div>
+          </div>
+        </section>
+
+        <section id="project" class="program">
+          <div class="prog-head">
+            <div class="code">2.3.1 • PROJECT • 5:00 – 7:00</div>
+            <div class="status active">✅ Ativo</div>
+          </div>
+          <h3 class="title">Eixo de projetos tecnológicos e comunitários</h3>
+          <p class="desc">Apoio ao desenvolvimento de iniciativas de impacto positivo com foco em resultados práticos.</p>
+          <div class="highlights">
+            <div class="chip">Projetos em andamento</div>
+            <div class="chip">Impacto social</div>
+            <div class="chip">Parcerias locais</div>
+          </div>
+        </section>
+
+        <section id="challenge" class="program">
+          <div class="prog-head">
+            <div class="code">2.4.1 • CHALLENGE • 7:00 – 8:30</div>
+            <div class="status exec">🚧 Em execução</div>
+          </div>
+          <h3 class="title">Desafios, hackathons e competições</h3>
+          <p class="desc">Programa focado em desenvolvedores com competições técnicas, maratonas e desafios criativos.</p>
+          <div class="highlights">
+            <div class="chip">Hackathons</div>
+            <div class="chip">Desafios técnicos</div>
+            <div class="chip">Comunidade dev</div>
+          </div>
+        </section>
+
+        <section id="force" class="program">
+          <div class="prog-head">
+            <div class="code">2.5.1 • FORCE • 8:30 – 10:00</div>
+            <div class="status">🌱 Em expansão</div>
+          </div>
+          <h3 class="title">Conexão com investidores e apoiadores</h3>
+          <p class="desc">Conectar capital inteligente a projetos do ecossistema e fomentar apoio financeiro sustentável.</p>
+          <div class="highlights">
+            <div class="chip">Investidores</div>
+            <div class="chip">Sisgama Club</div>
+            <div class="chip">Financiamento</div>
+          </div>
+        </section>
+
+        <section id="closing" class="program">
+          <div class="prog-head">
+            <div class="code">Encerramento • 10:00 – 11:00</div>
+            <div class="status">Fecho</div>
+          </div>
+          <h3 class="title">Resumo e chamada para ação</h3>
+          <p class="desc">Recapitulação, convite para seguir o Sisgama e teaser do próximo episódio (projetos em destaque).</p>
+        </section>
+
+        <footer>
+          <p>Produção: Sisgama • Roteiro: Olá Universo • Episódio 01</p>
+        </footer>
+      </main>
+
+      <aside class="aside">
+        <h2>Índice rápido</h2>
+        <ul class="toc">
+          <li><a href="#intro">Abertura</a><span>0:00</span></li>
+          <li><a href="#acceleration">ACCELERATION</a><span>1:00</span></li>
+          <li><a href="#lab">LAB</a><span>3:00</span></li>
+          <li><a href="#project">PROJECT</a><span>5:00</span></li>
+          <li><a href="#challenge">CHALLENGE</a><span>7:00</span></li>
+          <li><a href="#force">FORCE</a><span>8:30</span></li>
+          <li><a href="#closing">Encerramento</a><span>10:00</span></li>
+        </ul>
+        </div>
+
+        <p style="margin-top:12px;color:var(--muted);font-size:13px">Use este layout como base para roteiro, teleprompter ou material de produção audiovisual.</p>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    function downloadHTML(){
+      const blob = new Blob([document.documentElement.outerHTML],{type:'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'ola-universo-episodio-01-indice.html';
+      document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>
